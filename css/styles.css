@@ -3453,6 +3453,11 @@ body.network-creator-modal-open {
   animation: faq-scroll-horizontal var(--scroll-duration, 60s) linear infinite;
 }
 
+.faq-scroller:hover .faq-scroller__track.is-animating,
+.faq-scroller:focus-within .faq-scroller__track.is-animating {
+  animation-play-state: paused;
+}
+
 .faq-card {
   flex: 0 0 auto;
   display: flex;
