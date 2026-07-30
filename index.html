@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You Create. Everything Else Is On Us! | CreatorTube</title>
+  <meta name="description" content="Research, scripts, editing, thumbnails, publishing everything except being on camera.">
+  <link rel="icon" href="https://framerusercontent.com/images/ynsv0OSPKLAzCRk3geUaRxD0.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,700&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/PPNeueMontreal-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css?v=249">
+</head>
+<body>
+
+  <!-- Site-wide aurora background (ported from aurora-background.tsx) -->
+  <div class="bg-aurora" id="bg-aurora" aria-hidden="true">
+    <div class="bg-aurora__inner">
+      <div class="bg-aurora__layer"></div>
+    </div>
+  </div>
+
+  <!-- Header — full-bleed bar: logo left, nav links right -->
+  <header class="site-header" id="site-header">
+    <div class="header-bar">
+      <a href="#home" class="wordmark" aria-label="CreatorTube home">
+        <img src="https://framerusercontent.com/images/9wk0ECGVHAhgyKz5ATAXpu0dRs.png" alt="CreatorTube">
+      </a>
+
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="#home" class="header-nav-link is-active">Home</a>
+        <a href="#influencer-marketing" class="header-nav-link">Services</a>
+        <a href="#team" class="header-nav-link">Team</a>
+        <a href="#faq" class="header-nav-link">FAQ</a>
+        <a href="#contact-us" class="header-nav-link">Contact</a>
+      </nav>
+
+      <button type="button" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg class="menu-toggle-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor"
+          stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path class="menu-toggle-top"
+            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22" />
+          <path d="M7 16 27 16" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu">
+      <a href="#home">Home</a>
+      <a href="#influencer-marketing">Services</a>
+      <a href="#team">Team</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact-us">Contact</a>
+    </div>
+  </header>
+
+  <!-- Intro cover: full purple screen that opens from the left on load -->
+  <div class="intro-cover" id="intro-cover">
+    <img class="intro-title" src="assets/logo.png" alt="CreatorTube">
+    <svg class="intro-wave" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
+      <!-- Purple lobe hanging below the cover — wavy bottom edge; area below is transparent so the page shows through -->
+      <path d="M0,0 L1440,0 L1440,250 C1120,258 770,232 440,120 C250,55 90,55 0,150 Z" />
+    </svg>
+  </div>
+
+  <main>
+
+    <!-- Hero + scroll-enlarged showreel (monk-e style) -->
+    <section class="hero-track" id="home">
+      <div class="hero-pin">
+        <div class="hero">
+          <div class="hero-content">
+            <h1 class="hero-mega" aria-label="You Create. Everything Else Is On Us.">
+              <span class="hero-mega-line" data-text="You Create."></span>
+              <span class="hero-mega-line" data-text="Everything Else"></span>
+              <span class="hero-mega-line" data-text="Is On Us."></span>
+            </h1>
+
+            <div class="hero-corner hero-corner--left">
+              <p class="hero-corner-text">So you can focus on what<br>really matters.</p>
+              <a href="#contact-us" class="hero-corner-btn">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="hero-video-frame" aria-label="Featured video">
+            <video
+              src="assets/hero-placeholder.mp4?v=3"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+            ></video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hover brand logos (after hero video) -->
+    <section class="brand-logo-section" aria-label="Trusted by leading companies">
+      <div class="brand-logo-divider">
+        <div class="brand-logo">
+          <div class="brand-logo-copy">
+            <p class="brand-logo-eyebrow">Used by</p>
+            <div class="brand-logo-title-wrap">
+              <p class="brand-logo-title brand-logo-title--measure" aria-hidden="true">leading companies</p>
+              <div class="brand-logo-title-slot" aria-live="polite">
+                <p class="brand-logo-title">leading companies</p>
+              </div>
+            </div>
+          </div>
+          <div class="brand-logo-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Creator statement (before pipeline timeline) -->
+    <section class="creator-statement" aria-label="Our promise to creators">
+      <div class="creator-statement__inner">
+        <h2 class="creator-statement__headline">
+          <span class="creator-statement__line">Ideas aren't the bottleneck. <span class="creator-statement__accent">Execution is.</span></span>
+          <span class="creator-statement__line">That's where we come in.</span>
+          <span class="creator-statement__line creator-statement__line--keep">You just show up. We handle the rest</span>
+        </h2>
+      </div>
+    </section>
+
+    <!-- Production pipeline timeline (scroll line-draw + node reveal) -->
+    <section class="pipeline-section" id="how-we-work" aria-labelledby="pipeline-title">
+      <p class="pipeline-intro" id="pipeline-title">This is how we work</p>
+      <div class="pipeline-track">
+        <div class="pipeline-sticky">
+          <div class="pipeline-rail">
+            <div class="pipeline-line" aria-hidden="true">
+              <div class="pipeline-line-fill"></div>
+            </div>
+            <ol class="pipeline-list"></ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Creators carousel (after pipeline) -->
+    <section class="creators-carousel-section" aria-labelledby="creators-carousel-title">
+      <p class="creators-carousel-lead">This pipeline runs some of India's biggest channels.</p>
+      <div class="creators-carousel-layout">
+        <div class="creators-carousel-copy">
+          <h2 class="creators-carousel-title" id="creators-carousel-title">Creators we work with</h2>
+        </div>
+        <div class="creators-carousel-marquee" aria-label="Creators we work with">
+          <div class="creators-carousel-viewport">
+            <div class="creators-carousel-track"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats — one-line bento cards (rendered by JS) -->
+    <section class="stats-section" aria-labelledby="stats-heading">
+      <div class="container">
+        <h2 class="stats-heading" id="stats-heading">let the stats speak</h2>
+        <div class="stats-row"></div>
+      </div>
+    </section>
+
+    <!-- Aspect 2 — Influencer Marketing -->
+    <div class="influencer-marketing" id="influencer-marketing">
+
+      <section class="im-divider creator-statement reveal" aria-labelledby="im-divider-title">
+        <div class="creator-statement__inner">
+          <h2 class="creator-statement__headline" id="im-divider-title">
+            <span class="creator-statement__line">But we don't just build channels</span>
+            <span class="creator-statement__line">we match brands to them, and</span>
+            <span class="creator-statement__line creator-statement__line--accent">creators to deals.</span>
+          </h2>
+          <h2 class="im-middle-title" id="im-intro-title">We sit in the <span class="serif-italic">middle</span>.</h2>
+          <div class="im-pitch-cards" aria-label="Who we work with"></div>
+        </div>
+      </section>
+
+      <section class="pipeline-section pipeline-section--4 im-process reveal" id="im-process" aria-labelledby="im-process-title">
+        <div class="im-process-header">
+          <p class="im-eyebrow im-process-eyebrow" id="im-process-title">How it works</p>
+        </div>
+        <div class="pipeline-track">
+          <div class="pipeline-sticky">
+            <div class="pipeline-rail">
+              <div class="pipeline-line" aria-hidden="true">
+                <div class="pipeline-line-fill"></div>
+              </div>
+              <ol class="pipeline-list"></ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="im-network" data-network-gallery aria-labelledby="im-network-eyebrow">
+        <p class="im-network-gallery__eyebrow" id="im-network-eyebrow">Our creator network</p>
+
+        <div class="im-network-gallery__mobile-head" data-network-mobile-head>
+          <p class="im-network-gallery__mobile-title">From creators to campaigns</p>
+        </div>
+
+        <div class="im-network-gallery__scroll" data-network-scroll>
+          <div class="im-network-gallery__sticky" data-network-sticky>
+            <div class="im-network-gallery__text" data-network-text aria-hidden="true">
+              <p class="im-network-gallery__label im-network-gallery__label--start" data-network-label-start>From creators</p>
+              <p class="im-network-gallery__label im-network-gallery__label--end" data-network-label-end>to campaigns</p>
+            </div>
+            <div class="im-network-gallery__viewport" data-network-viewport>
+              <div class="im-network-gallery__track" data-network-track></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="im-network-gallery__mobile-rail" data-network-mobile-rail aria-label="Creator gallery"></div>
+
+        <div class="network-creator-modal" data-network-creator-modal hidden aria-hidden="true">
+          <div class="network-creator-modal__backdrop" data-network-modal-backdrop></div>
+          <div class="network-creator-modal__panel" role="dialog" aria-modal="true" aria-labelledby="network-creator-modal-title" tabindex="-1">
+            <button type="button" class="network-creator-modal__close" data-network-modal-close aria-label="Close creator details">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <div class="network-creator-modal__head">
+              <div class="network-creator-modal__identity">
+                <img class="network-creator-modal__avatar" data-network-modal-avatar alt="" width="120" height="120">
+                <div>
+                  <h3 class="network-creator-modal__name" id="network-creator-modal-title" data-network-modal-name></h3>
+                  <p class="network-creator-modal__niche" data-network-modal-niche></p>
+                </div>
+              </div>
+              <div class="network-creator-modal__stats" data-network-modal-stats></div>
+            </div>
+            <p class="network-creator-modal__summary" data-network-modal-summary></p>
+            <div class="network-creator-modal__work">
+              <h4 class="network-creator-modal__label">What we did</h4>
+              <ul class="network-creator-modal__services" data-network-modal-services></ul>
+            </div>
+            <div class="network-creator-modal__videos">
+              <h4 class="network-creator-modal__label">Featured work</h4>
+              <div class="network-creator-modal__video-grid" data-network-modal-videos></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="im-brands reveal" aria-labelledby="im-brands-title">
+        <div class="container im-brands-head">
+          <p class="im-eyebrow">Brands we've partnered with</p>
+          <h2 class="im-title" id="im-brands-title">Results, not just reach.</h2>
+        </div>
+        <div class="im-brands-marquee" aria-label="Partner brands">
+          <div class="im-brands-marquee__viewport">
+            <div class="im-brands-track"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="im-campaign-stats reveal" aria-labelledby="im-campaign-title">
+        <div class="im-campaign-inner">
+          <h2 class="im-title im-campaign-title" id="im-campaign-title">What our campaigns deliver.</h2>
+          <div class="im-campaign-stats__wrap">
+            <div class="im-stats-split" aria-label="Campaign results"></div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Team (rendered by JS) -->
+    <section class="team-section reveal" id="team" aria-labelledby="team-title">
+      <div class="team-section__grid-bg" aria-hidden="true">
+        <svg class="team-section__grid-svg" fill="none">
+          <defs>
+            <pattern id="team-grid-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <path d="M20 0L0 0 0 20" fill="none" stroke="currentColor" stroke-width="0.5"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#team-grid-pattern)"/>
+        </svg>
+      </div>
+      <div class="container team-section__container">
+        <h2 class="section-heading" id="team-title">Meet the creators behind The Creators</h2>
+      </div>
+      <div class="team-grid" aria-label="CreatorTube team"></div>
+    </section>
+
+    <!-- FAQ (rendered by JS) -->
+    <section class="faq-section reveal" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-section__container">
+        <div class="faq-section__header">
+          <h2 class="faq-section__title section-heading" id="faq-title">Got questions? We've got answers</h2>
+        </div>
+      </div>
+      <div class="faq-scroller-rows" aria-label="Frequently asked questions"></div>
+    </section>
+
+    <!-- Contact (rendered by JS) -->
+    <section class="contact-section reveal" id="contact-us">
+      <div class="container contact-section__container"></div>
+    </section>
+
+  </main>
+
+  <!-- Footer (rendered by JS) -->
+  <footer class="site-footer">
+    <div class="site-footer__inner"></div>
+  </footer>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="js/utils.js?v=1"></script>
+  <script src="js/data.js?v=29"></script>
+  <script src="js/network-gallery.js?v=38"></script>
+  <script src="js/main.js?v=119"></script>
+</body>
+</html>
